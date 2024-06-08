@@ -1,0 +1,20 @@
+includes:
+  - vendor/saschaegerer/phpstan-typo3/extension.neon
+
+parameters:
+  level: 5
+
+  paths:
+    - %currentWorkingDirectory%/vendor/traw/hreflang-pages
+    - %currentWorkingDirectory%/vendor/traw/powermailautocomplete
+    - %currentWorkingDirectory%/vendor/traw/powermailcaptcha
+    - %currentWorkingDirectory%/vendor/traw/vhs-col
+    - %currentWorkingDirectory%/vendor/traw/video-vtt
+    - %currentWorkingDirectory%/vendor/traw/whatchado
+
+
+  excludePaths:
+    - */node_modules/*
+
+  ignoreErrors:
+    - '#Variable \$_EXTKEY might not be defined.#'

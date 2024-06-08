@@ -1,0 +1,20 @@
+paths:
+  - vendor/traw/*
+
+filePatterns:
+  - "*.typoscript"
+  - "*.tsconfig"
+
+sniffs:
+  - class: Indentation
+    parameters:
+      useSpaces: true
+      indentPerLevel: 4
+  - class: DeadCode
+  - class: OperatorWhitespace
+  - class: RepeatingRValue
+    disabled: true
+  - class: EmptySection
+  - class: NestingConsistency
+    parameters:
+      commonPathPrefixThreshold: 1

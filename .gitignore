@@ -1,0 +1,14 @@
+.idea
+.passwd
+.env
+.php-cs-fixer.cache
+vendor/
+packages
+var/
+node_modules
+public/index.php
+public/typo3
+public/typo3temp
+public/_assets/
+public/fileadmin
+public/uploads
