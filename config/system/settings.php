@@ -2,7 +2,7 @@
 return [
     'BE' => [
         'debug' => true,
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$YWV3a1ZZaU92dUF4ZGJiRA$f3CEur3OU/1POY6NeUEyqJz9FyhkfklnoPC6Ig6G79U',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$RDhRc1o0MG1ic1c3Y0drcQ$5ZvFB4QQwRWN6bz0tfvXtKSeM7C127C+a/xLWJbzYHw',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -46,6 +46,14 @@ return [
             'disablePluginInformation' => '0',
             'disablePluginInformationMailPreview' => '0',
             'enableCaching' => '0',
+            'extender' => [
+                'In2code\Powermail\Domain\Model\Field' => [
+                    'powermailautocomplete' => 'TRAW\\Powermailautocomplete\\Domain\\Model\\Field',
+                ],
+                'In2code\Powermail\Domain\Model\Form' => [
+                    'powermailautocomplete' => 'TRAW\\Powermailautocomplete\\Domain\\Model\\Form',
+                ],
+            ],
             'replaceIrreWithElementBrowser' => '0',
         ],
         'scheduler' => [
@@ -86,6 +94,9 @@ return [
             'useReverseUriLengthInPriority' => '1',
             'validFallbackHeaders' => 'Content-Type,Content-Language,Content-Security-Policy,Link,X-SFC-Tags',
             'validHtaccessHeaders' => 'Content-Type,Content-Language,Content-Security-Policy,Link,X-SFC-Tags',
+        ],
+        'vhs_col' => [
+            'enableGalleryProcessor' => '0',
         ],
         'whatchado' => [
             'whatchadoApiKey' => '',
