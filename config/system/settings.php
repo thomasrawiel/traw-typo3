@@ -54,15 +54,6 @@ return [
             'telephoneValidationPatternForJs' => '/[^\\d\\+\\s\\-]/g',
             'telephoneValidationPatternForPhp' => '/[^\\d\\+\\s\\-]/',
         ],
-        'vcfqr' => [
-            'addressTablename' => 'tt_address',
-            'enableExamples' => '1',
-            'eventTablename' => 'tt_content',
-            'qrcodeCacheLifetime' => '86400',
-            'qrfolder' => 'qr-codes',
-            'storageUid' => '0',
-            'vcardVersion' => '5',
-        ],
         'vhs_col' => [
             'enableGalleryProcessor' => '1',
         ],
