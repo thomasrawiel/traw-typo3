@@ -12,12 +12,8 @@
 	},
 	"repositories": [
 		{
-			"type": "vcs",
-			"url": "git@github.com:thomasrawiel/traw-theme.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@github.com:thomasrawiel/vhs.git"
+			"type": "path",
+			"url": "packages/*"
 		}
 	],
 	"require": {
@@ -46,10 +42,7 @@
 		"typo3/cms-tstemplate": "^13",
 		"helhum/dotenv-connector": "^3.0",
 		"helhum/typo3-console": "^8.1",
-		"traw/vhs-col": "^1.11",
-		"traw/traw-theme": "dev-main",
-		"friendsoftypo3/tt-address": "^9",
-		"traw/vcfqr": "^0.4"
+		"traw/traw-theme": "*"
 	},
 	"scripts": {
 		"typo3cms": [

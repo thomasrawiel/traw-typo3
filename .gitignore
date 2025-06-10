@@ -3,7 +3,6 @@
 .env
 .php-cs-fixer.cache
 vendor/
-packages
 var/
 node_modules
 public/index.php

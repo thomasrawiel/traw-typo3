@@ -1,0 +1,32 @@
+TCEFORM.tt_content.CType {
+    removeItems := addToList(header)
+    removeItems := addToList(textpic)
+    removeItems := addToList(image)
+    removeItems := addToList(bullets)
+    removeItems := addToList(image)
+    removeItems := addToList(table)
+
+    #menu
+    removeItems := addToList(menu_abstract)
+    removeItems := addToList(menu_categorized_content)
+    removeItems := addToList(menu_categorized_pages)
+    removeItems := addToList(menu_pages)
+    removeItems := addToList(menu_subpages)
+    removeItems := addToList(menu_recently_updated)
+    removeItems := addToList(menu_related_pages)
+    removeItems := addToList(menu_section)
+    removeItems := addToList(menu_section_pages)
+    removeItems := addToList(menu_sitemap)
+    removeItems := addToList(menu_sitemap_pages)
+    #special
+    removeItems := addToList(div)
+    removeItems := addToList(html)
+
+    #removeItems := addToList(uploads)
+}
+
+mod.wizards.newContentElement.wizardItems {
+    default {
+        show := removeFromList(text,textmedia,uploads)
+    }
+}
