@@ -2,7 +2,7 @@
 Setup for testing TRAW extensions
 
 
-Examples and Theme can be found in [EXT:traw_theme](https://github.com/thomasrawiel/traw-theme)
+Examples and Theme can be found in [EXT:traw_theme](https://github.com/thomasrawiel/traw-typo3/tree/main/packages/traw-theme)
 
 
 ## Installation
