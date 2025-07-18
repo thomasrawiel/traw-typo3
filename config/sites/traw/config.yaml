@@ -1,13 +1,14 @@
 base: '%env(BASEURL)%'
-errorHandling: {  }
 languages:
   -
     title: English
     enabled: true
     languageId: 0
     base: /
-    locale: en_US.UTF-8
+    locale: de_DE.utf8
     navigationTitle: English
     flag: us
+    hreflang: ''
+    websiteTitle: ''
 rootPageId: 1
-routes: {  }
+websiteTitle: ''

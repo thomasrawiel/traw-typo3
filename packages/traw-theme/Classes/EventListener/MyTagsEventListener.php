@@ -6,7 +6,7 @@ use TRAW\SupHeader\Events\AllowedTagsEvent;
 
 class MyTagsEventListener
 {
-    public function __invoke(AllowedTagsEvent $event)
+    public function __invoke(AllowedTagsEvent $event): void
     {
         //add a single html tag
         $event->addAllowedTag('abbr');

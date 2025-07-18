@@ -43,7 +43,7 @@ class PreviewRenderer extends StandardContentPreviewRenderer
         $this->getProcessedValue($item, implode(',', $fieldList), $info);
 
         if (!empty($GLOBALS['TCA'][$table]['ctrl']['descriptionColumn']) && !empty($record[$GLOBALS['TCA'][$table]['ctrl']['descriptionColumn']])) {
-            $info[] = htmlspecialchars($record[$GLOBALS['TCA'][$table]['ctrl']['descriptionColumn']]);
+            $info[] = htmlspecialchars((string) $record[$GLOBALS['TCA'][$table]['ctrl']['descriptionColumn']]);
         }
 
         if ($info !== []) {

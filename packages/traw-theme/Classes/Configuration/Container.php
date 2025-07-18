@@ -17,6 +17,7 @@ class Container
                 ],
                 'icon' => 'EXT:container/Resources/Public/Icons/container-2col.svg',
                 'registerInNewContentElementWizard' => true,
+                'saveAndCloseInNewContentElementWizard' => false,
                 'group' => 'container',
                 'header' => true,
             ],
