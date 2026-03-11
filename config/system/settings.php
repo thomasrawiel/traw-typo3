@@ -55,6 +55,8 @@ return [
             'telephoneValidationPatternForPhp' => '/[^\\d\\+\\s\\-]/',
         ],
         'vhs_col' => [
+            'cropVariants' => 'desktop|16:9,tablet|4:3,mobile|1:1',
+            'disableDefaultCropVariant' => '1',
             'enableGalleryProcessor' => '1',
         ],
     ],
